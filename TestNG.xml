@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sauce Demo">
+    <parameter name="browser" value="CHROME"/>
+    <parameter name="env" value="PROD"/>
+    <parameter name="wait" value="30"/>
+    <parameter name="quit" value="YES"/>
+    <test name="Test1">
+        <classes>
+            <class name="runners.Runner"/>
+        </classes>
+    </test>
+</suite>
