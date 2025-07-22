@@ -22,6 +22,8 @@
         <cucumber-testng-version>7.16.0</cucumber-testng-version>
         <allure-cucumber7-jvm-version>2.27.0</allure-cucumber7-jvm-version>
         <rest-assured-version>5.5.5</rest-assured-version>
+        <poi-verson>5.4.1</poi-verson>
+        <poi-ooxml-version>5.4.1</poi-ooxml-version>
     </properties>
 
     <dependencies>
@@ -79,6 +81,18 @@
             <artifactId>rest-assured</artifactId>
             <version>${rest-assured-version}</version>
             <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>${poi-verson}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>${poi-ooxml-version}</version>
         </dependency>
     </dependencies>
     <build>

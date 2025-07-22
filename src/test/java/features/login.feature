@@ -1,7 +1,6 @@
 Feature: Login
   As a user I should be able to use login form
 
-
   Scenario: Login with valid credentials
   As a user I should be able to login using valid username and password
 
@@ -37,7 +36,7 @@ Feature: Login
     And I click on the login button
     Then I should get error message "Epic sadface: Username and password do not match any user in this service"
 
-  @Smoke
+
   Scenario Outline: Login with invalid credentials
   As a user i should not be able to login using invalid username and/or password
 
